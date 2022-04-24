@@ -2,9 +2,11 @@ import Button from './Button'
 
 export const generated = () => {
   return (
-    <Button size="sm" textColor="white" bgColor="blue-500">
-      Enable
-    </Button>
+    <div className="p-4 flex flex-row justify-around">
+      <Button variant="primary">Enable</Button>
+      <Button variant="white">Enable</Button>
+      <Button variant="red">Enable</Button>
+    </div>
   )
 }
 

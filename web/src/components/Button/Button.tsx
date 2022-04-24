@@ -1,11 +1,28 @@
 // Button.jsx
 
-function Button({ size, bgColor, textColor, children }) {
+const variants = {
+  primary:
+    'inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
+  white:
+    'inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
+  red: 'inline-flex items-center rounded-md border border-transparent bg-rose-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2',
+}
+
+export function Button({
+  type = 'button',
+  variant = 'primary',
+  className,
+  children,
+  ...props
+}: {
+  children: React.ReactNode
+  variant?: 'primary' | 'white' | 'red'
+} & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
     <button
-      className={`bg-blue-500 text-white font-bold py-2 px-4 rounded ${
-        size === 'sm' ? 'text-xs' : 'text-xl'
-      }`}
+      type={type}
+      className={`${className} ${variants[variant]}`}
+      {...props}
     >
       {children}
     </button>
@@ -13,14 +30,3 @@ function Button({ size, bgColor, textColor, children }) {
 }
 
 export default Button
-
-// const Button = () => {
-//   return (
-//     <div>
-//       <h2>{'Button'}</h2>
-//       <p>{'Find me in ./web/src/components/Button/Button.tsx'}</p>
-//     </div>
-//   )
-// }
-
-// export default Button
