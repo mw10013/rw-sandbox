@@ -1,8 +1,9 @@
 # README
 
-## Setup
+## Development Setup
 - nvm use 16
 - yarn rw setup ui tailwindcss
+- yarn workspace web add classname
 
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
