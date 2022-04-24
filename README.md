@@ -1,5 +1,9 @@
 # README
 
+## Setup
+- nvm use 16
+- yarn rw setup ui tailwindcss
+
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
 > **Prerequisites**
