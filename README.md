@@ -12,6 +12,7 @@
 - yarn rw prisma studio
 - yarn rw g types | "VSCode GraphQL: Manual Restart"
 
+## yarn rw setup auth dbAuth
 
 You will need to add a couple of fields to your User table in order
     to store a hashed password and salt:
@@ -69,6 +70,21 @@ You will need to add a couple of fields to your User table in order
     for those as well:
 
       yarn rw generate dbAuth
+
+## yarn rw generate dbAuth
+
+You'll need to tell your pages where to redirect after a user has logged in,
+    signed up, or reset their password. Look in LoginPage, SignupPage,
+    ForgotPasswordPage and ResetPasswordPage for these lines:
+
+      if (isAuthenticated) {
+        navigate(routes.home())
+      }
+
+    and change the route to where you want them to go if the user is already
+    logged in. Also take a look in the onSubmit() functions in ForgotPasswordPage
+    and ResetPasswordPage to change where the user redirects to after submitting
+    those forms.
 
 Welcome to [RedwoodJS](https://redwoodjs.com)!
 
