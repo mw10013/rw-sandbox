@@ -6,6 +6,7 @@
 - yarn rw setup auth dbAuth
 - yarn rw prisma migrate dev
 - yarn rw generate dbAuth
+- yarn rw g scaffold user
 
 ## Development CLI
 
