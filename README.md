@@ -1,8 +1,13 @@
 # README
 
+## Development
+- admin@admin.com/admin
+- user@user.com/user
+
 ## Development Setup
 - nvm use 16
 - yarn rw setup ui tailwindcss
+- yarn redwood generate page home /
 - yarn rw setup auth dbAuth
 - yarn rw prisma migrate dev
 - yarn rw generate dbAuth
@@ -12,6 +17,7 @@
 
 - yarn rw prisma studio
 - yarn rw g types | "VSCode GraphQL: Manual Restart"
+- yarn rw g secret
 
 ## yarn rw setup auth dbAuth
 
