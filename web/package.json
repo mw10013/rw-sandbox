@@ -13,6 +13,8 @@
     ]
   },
   "dependencies": {
+    "@headlessui/react": "^1.6.0",
+    "@heroicons/react": "^1.0.6",
     "@redwoodjs/auth": "1.1.1",
     "@redwoodjs/forms": "1.1.1",
     "@redwoodjs/router": "1.1.1",

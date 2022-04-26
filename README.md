@@ -12,6 +12,9 @@
 - yarn rw prisma migrate dev
 - yarn rw generate dbAuth
 - yarn rw g scaffold admin/user
+- yarn rw g layout public | mv to nested folder | yarn rw g types
+- yarn workspace web add @headlessui/react
+- yarn workspace web add @heroicons/react
 
 ## Development CLI
 
