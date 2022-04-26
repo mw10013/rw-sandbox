@@ -18,6 +18,7 @@
 
 ## Development CLI
 
+- yarn rw g types
 - yarn rw prisma studio
 - yarn rw g types | "VSCode GraphQL: Manual Restart"
 - yarn rw g secret
