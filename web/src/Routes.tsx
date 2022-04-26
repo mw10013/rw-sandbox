@@ -16,6 +16,11 @@ const Routes = () => {
     <Router>
       <Set wrap={PublicLayout}>
         <Route path="/" page={HomePage} name="home" />
+        <Route path="/login" page={LoginPage} name="login" />
+        <Route path="/signup" page={SignupPage} name="signup" />
+        <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
+        <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
+        <Route notfound page={NotFoundPage} />
       </Set>
       <Set wrap={UsersLayout}>
         <Route path="/admin/users/new" page={AdminUserNewUserPage} name="adminNewUser" />
@@ -23,11 +28,6 @@ const Routes = () => {
         <Route path="/admin/users/{id}" page={AdminUserUserPage} name="adminUser" />
         <Route path="/admin/users" page={AdminUserUsersPage} name="adminUsers" />
       </Set>
-      <Route path="/login" page={LoginPage} name="login" />
-      <Route path="/signup" page={SignupPage} name="signup" />
-      <Route path="/forgot-password" page={ForgotPasswordPage} name="forgotPassword" />
-      <Route path="/reset-password" page={ResetPasswordPage} name="resetPassword" />
-      <Route notfound page={NotFoundPage} />
     </Router>
   )
 }

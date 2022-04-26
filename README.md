@@ -18,13 +18,12 @@
 
 ## Development CLI
 
-- yarn rw g types
-- yarn rw prisma studio
 - yarn rw g types | "VSCode GraphQL: Manual Restart"
 - yarn rw g secret
 - yarn rw prisma db push
 - yarn rw prisma db seed
 - yarn rw prisma migrate reset
+- yarn rw prisma studio
 
 ## yarn rw setup auth dbAuth
 
