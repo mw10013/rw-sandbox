@@ -6,10 +6,6 @@ type AdminLayoutProps = {
   children?: React.ReactNode
 }
 
-// const AdminLayout = ({ children }: AdminLayoutProps) => {
-//   return <>{children}</>
-// }
-
 const user = {
   name: 'Tom Cook',
   email: 'tom@example.com',
@@ -33,16 +29,11 @@ function classNames(...classes) {
 }
 
 const AdminLayout = ({ children }: AdminLayoutProps) => {
+  // Light nav with bottom bar: https://tailwindui.com/components/application-ui/application-shells/stacked
+  // <html class="h-full">
+  // <body class="h-full">
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-white border-b border-gray-200">
           {({ open }) => (

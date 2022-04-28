@@ -10,6 +10,9 @@ type PublicLayoutProps = {
 
 const PublicLayout = ({ children }: PublicLayoutProps) => {
   const { logOut, isAuthenticated } = useAuth()
+
+  // Split with navbar: https://tailwindui.com/components/marketing/sections/heroes
+  // Centered with bottom border: https://tailwindui.com/components/marketing/elements/headers
   return (
     <div className="relative bg-gray-50">
       <Popover className="relative bg-white shadow">
